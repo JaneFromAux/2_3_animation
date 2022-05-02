@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img:hover {
+    animation-name: hoverIt;
+    animation-duration: 8s;
+}
+
+@keyframes hoverIt {
+
+    0%,
+    100% {
+        box-shadow: -5px -5px 40px blue, 10px 10px 40px aqua;
+        transition: box-shadow 2s linear;
+    }
+
+    25% {
+        box-shadow: 0 0 40px beige;
+        transition: box-shadow 2s linear;
+    }
+
+    50% {
+        box-shadow: -5px -5px 40px aqua, 10px 10px 40px blue;
+        transition: box-shadow 2s linear;
+    }
+
+    75% {
+        box-shadow: 0 0 40px beige;
+        transition: box-shadow 2s linear;
+    }
+}
